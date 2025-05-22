@@ -18,7 +18,8 @@ public class JumpPad : MonoBehaviour
                 // 기존의 Y 방향 속도를 제거하고 위로 힘을 가함
                 Vector3 launchVelocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
                 rb.velocity = launchVelocity;
-                rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                //rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
             }
         }
     }

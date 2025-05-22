@@ -49,6 +49,8 @@ public class PlayerCondition : MonoBehaviour, IDamageIbe
     public void Die()
     {
         Debug.Log("»ç¸Á»ç¸Á");
+
+        Time.timeScale = 0f;
     }
 
     public void TakePhysicalDamage(int damage)
