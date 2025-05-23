@@ -54,8 +54,14 @@ public class Interaction : MonoBehaviour
     }
     private void SetPromptText()
     {
-        prompText.gameObject.SetActive(true);
-        prompText.text = curInteractable.GetInteractPrompt();
+        if (curInteractable != null)
+        {
+            prompText.gameObject.SetActive(true);
+            prompText.text = curInteractable.GetInteractPrompt();
+        }
+
+        //prompText.gameObject.SetActive(true);
+        //prompText.text = curInteractable.GetInteractPrompt();
     }
 
     public void OnInteractInput(InputAction.CallbackContext context)
