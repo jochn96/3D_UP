@@ -24,4 +24,6 @@ public class ItemObject : MonoBehaviour, IInteractable
         CharacterManager.Instance.Player.addItem?.Invoke();
         Destroy(gameObject);
     }
+
+    
 }
