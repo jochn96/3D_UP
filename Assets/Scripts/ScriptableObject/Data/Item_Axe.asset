@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Axe
   m_EditorClassIdentifier: 
   displayName: "\uB3C4\uB07C"
-  description: "\uB3C4\uB07C \uC7A5\uCC29  "
+  description: "[E]\uB3C4\uB07C \uC7A5\uCC29  "
   type: 0
   icon: {fileID: 21300000, guid: 06e8d836c76eb494db7ab3784ffcb0eb, type: 3}
   dropPrefab: {fileID: 5592125038903883804, guid: 9edc34f91a9b4914884f5c4ca181fb01, type: 3}
